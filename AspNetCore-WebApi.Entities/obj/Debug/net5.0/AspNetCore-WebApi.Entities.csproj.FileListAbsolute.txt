@@ -1,0 +1,5 @@
+D:\Proj\AspNetCore-WebApi\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.csprojAssemblyReference.cache
+D:\Proj\AspNetCore-WebApi\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proj\AspNetCore-WebApi\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.AssemblyInfoInputs.cache
+D:\Proj\AspNetCore-WebApi\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.AssemblyInfo.cs
+D:\Proj\AspNetCore-WebApi\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.csproj.CoreCompileInputs.cache
