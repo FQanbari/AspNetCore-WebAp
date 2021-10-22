@@ -1,5 +1,7 @@
 ﻿using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Entities;
+using AspNetCore_WebApi.WebFramework.Api;
+using AspNetCore_WebApi.WebFramework.Filters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +25,7 @@ namespace AspNetCore_WebApi.Api.Controllers
         }
 
         [HttpGet]
+        [ApiResultFilter]
         public async Task<List<User>> Get(CancellationToken cancellationToken)
         {
             var users = await userRepository.TableNoTracking.ToListAsync(cancellationToken);
@@ -30,20 +33,23 @@ namespace AspNetCore_WebApi.Api.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<User>> Get(int id,CancellationToken cancellationToken)
+        public async Task<ApiResult<User>> Get(int id,CancellationToken cancellationToken)
         {
             var user = await userRepository.GetByIdAsync(cancellationToken,id);
+            if (user == null)
+                return NotFound();
             return user;
         }
 
         [HttpPost]
-        public async Task Creat(User user,CancellationToken cancellationToken)
+        public async Task<ApiResult<User>> Creat(User user,CancellationToken cancellationToken)
         {
             await userRepository.AddAsync(user, cancellationToken);
+            return Ok(user);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update(int id,User user,CancellationToken cancellationToken)
+        public async Task<ApiResult> Update(int id,User user,CancellationToken cancellationToken)
         {
             var updateUser = await userRepository.GetByIdAsync(cancellationToken, id);
 

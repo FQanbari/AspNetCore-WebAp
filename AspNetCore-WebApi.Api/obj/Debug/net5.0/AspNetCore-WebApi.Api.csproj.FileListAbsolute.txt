@@ -80,3 +80,7 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\ref\AspNetCo
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.pdb
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.genruntimeconfig.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\appsettings.Development.json
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.csproj.CopyComplete
