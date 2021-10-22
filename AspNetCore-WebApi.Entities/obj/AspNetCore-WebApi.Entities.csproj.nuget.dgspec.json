@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj": {}
+    "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj": {}
   },
   "projects": {
-    "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj": {
+    "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj",
+        "projectUniqueName": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj",
         "projectName": "AspNetCore-WebApi.Common",
-        "projectPath": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj",
-        "packagesPath": "C:\\Users\\FQ\\.nuget\\packages\\",
-        "outputPath": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\obj\\",
+        "projectPath": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj",
+        "packagesPath": "C:\\Users\\ARVIN\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\FQ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ARVIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,24 +68,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj": {
+    "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj",
+        "projectUniqueName": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj",
         "projectName": "AspNetCore-WebApi.Entities",
-        "projectPath": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj",
-        "packagesPath": "C:\\Users\\FQ\\.nuget\\packages\\",
-        "outputPath": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Entities\\obj\\",
+        "projectPath": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Entities\\AspNetCore-WebApi.Entities.csproj",
+        "packagesPath": "C:\\Users\\ARVIN\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\FQ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ARVIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj": {
-                "projectPath": "D:\\Proj\\AspNetCore-WebApi\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj"
+              "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj": {
+                "projectPath": "E:\\Projects\\AspNetCore-WebAp\\AspNetCore-WebApi.Common\\AspNetCore-WebApi.Common.csproj"
               }
             }
           }
@@ -134,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
