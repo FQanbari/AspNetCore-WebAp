@@ -1,4 +1,6 @@
 using AspNetCore_WebApi.Data;
+using AspNetCore_WebApi.Data.Contracts;
+using AspNetCore_WebApi.Data.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -34,6 +36,8 @@ namespace AspNetCore_WebApi.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AspNetCore_WebApi.Api", Version = "v1" });
             });
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
