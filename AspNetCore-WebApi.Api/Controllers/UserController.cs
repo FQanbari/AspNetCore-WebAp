@@ -1,4 +1,5 @@
-﻿using AspNetCore_WebApi.Data.Contracts;
+﻿using AspNetCore_WebApi.Api.Models;
+using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Entities;
 using AspNetCore_WebApi.WebFramework.Api;
 using AspNetCore_WebApi.WebFramework.Filters;
@@ -14,6 +15,7 @@ using System.Threading.Tasks;
 namespace AspNetCore_WebApi.Api.Controllers
 {
     [Route("api/[controller]")]
+    [ApiResultFilter]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -24,8 +26,7 @@ namespace AspNetCore_WebApi.Api.Controllers
             this.userRepository = userRepository;
         }
 
-        [HttpGet]
-        [ApiResultFilter]
+        [HttpGet]        
         public async Task<List<User>> Get(CancellationToken cancellationToken)
         {
             var users = await userRepository.TableNoTracking.ToListAsync(cancellationToken);
@@ -42,9 +43,19 @@ namespace AspNetCore_WebApi.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ApiResult<User>> Creat(User user,CancellationToken cancellationToken)
+        public async Task<ApiResult<User>> Creat(UserDto userDto,CancellationToken cancellationToken)
         {
-            await userRepository.AddAsync(user, cancellationToken);
+            var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
+            if (exists)
+                return BadRequest("user is exist.");
+            var user = new User
+            {
+                Age = userDto.Age,
+                FullName = userDto.FullName,
+                Gender = userDto.Gender,
+                UserName = userDto.UserName
+            }; 
+            await userRepository.AddAsync(user,userDto.Password, cancellationToken);
             return Ok(user);
         }
 

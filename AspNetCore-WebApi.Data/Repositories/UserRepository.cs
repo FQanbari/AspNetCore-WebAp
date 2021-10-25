@@ -19,9 +19,11 @@ namespace AspNetCore_WebApi.Data.Repositories
         {
         }
 
-        public Task AddAsync(User user, string password, CancellationToken cancellationToken)
+        public async Task AddAsync(User user, string password, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var passwordHash = SecurityHelper.GetSha256Hash(password);
+            user.PasswordHash = passwordHash;
+            await base.AddAsync(user, cancellationToken);
         }
 
         public Task<User> GetByUserAndPass(string username, string password, CancellationToken cancellationToken)

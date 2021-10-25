@@ -13,6 +13,7 @@ namespace AspNetCore_WebApi.WebFramework.Api
     {
         public bool IsSuccess { get; set; }
         public ApiResultStatusCode StatusCode { get; set; }
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
         public string Message { get; set; }
 
         public ApiResult(bool isSuccess, ApiResultStatusCode statusCode, string message = null)
@@ -60,7 +61,6 @@ namespace AspNetCore_WebApi.WebFramework.Api
         where TData : class
     {
         [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-
         public TData Data { get; set; }
         public ApiResult(bool isSuccess, ApiResultStatusCode statusCode, TData data, string message = null)
             : base(isSuccess, statusCode, message)
