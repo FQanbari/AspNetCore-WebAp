@@ -1,6 +1,7 @@
 using AspNetCore_WebApi.Data;
 using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Data.Repositories;
+using AspNetCore_WebApi.WebFramework.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -43,9 +44,10 @@ namespace AspNetCore_WebApi.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCustomExceptionHandler();
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AspNetCore_WebApi.Api v1"));
             }

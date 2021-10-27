@@ -1,4 +1,5 @@
-﻿using AspNetCore_WebApi.Common.Utilities;
+﻿using AspNetCore_WebApi.Common;
+using AspNetCore_WebApi.Common.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;

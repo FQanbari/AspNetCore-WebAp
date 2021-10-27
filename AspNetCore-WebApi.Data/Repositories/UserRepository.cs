@@ -1,4 +1,5 @@
 ﻿using AspNetCore_WebApi.Common;
+using AspNetCore_WebApi.Common.Exceptions;
 using AspNetCore_WebApi.Common.Utilities;
 using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Entities;
@@ -21,6 +22,9 @@ namespace AspNetCore_WebApi.Data.Repositories
 
         public async Task AddAsync(User user, string password, CancellationToken cancellationToken)
         {
+            var exists = await TableNoTracking.AnyAsync(p => p.UserName == user.UserName);
+            if (exists)
+                throw new BadRequestException("نام کاربری تکراری است.");
             var passwordHash = SecurityHelper.GetSha256Hash(password);
             user.PasswordHash = passwordHash;
             await base.AddAsync(user, cancellationToken);

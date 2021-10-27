@@ -23,3 +23,4 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.WebFramework\obj\Debug\net5.0\Asp
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.WebFramework\obj\Debug\net5.0\AspNetCore-WebApi.WebFramework.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.WebFramework\obj\Debug\net5.0\ref\AspNetCore-WebApi.WebFramework.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.WebFramework\obj\Debug\net5.0\AspNetCore-WebApi.WebFramework.pdb
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.WebFramework\obj\Debug\net5.0\AspNetCore-WebApi.WebFramework.csproj.CopyComplete

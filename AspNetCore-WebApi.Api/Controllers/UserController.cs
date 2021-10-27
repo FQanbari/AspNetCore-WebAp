@@ -45,9 +45,9 @@ namespace AspNetCore_WebApi.Api.Controllers
         [HttpPost]
         public async Task<ApiResult<User>> Creat(UserDto userDto,CancellationToken cancellationToken)
         {
-            var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
-            if (exists)
-                return BadRequest("user is exist.");
+            //var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
+            //if (exists)
+            //    return BadRequest("user is exist.");
             var user = new User
             {
                 Age = userDto.Age,
