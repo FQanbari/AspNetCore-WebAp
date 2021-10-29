@@ -3,9 +3,12 @@ using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Entities;
 using AspNetCore_WebApi.WebFramework.Api;
 using AspNetCore_WebApi.WebFramework.Filters;
+using Elmah;
+using ElmahCore;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +24,12 @@ namespace AspNetCore_WebApi.Api.Controllers
     {
         private readonly IUserRepository userRepository;
 
-        public UserController(IUserRepository userRepository)
+        public ILogger<UserController> Logger { get; }
+
+        public UserController(IUserRepository userRepository, ILogger<UserController> logger)
         {
             this.userRepository = userRepository;
+            Logger = logger;
         }
 
         [HttpGet]        
@@ -45,6 +51,9 @@ namespace AspNetCore_WebApi.Api.Controllers
         [HttpPost]
         public async Task<ApiResult<User>> Creat(UserDto userDto,CancellationToken cancellationToken)
         {
+            //HttpContext.RiseError(new Exception("Your Exception"));
+            //ErrorSignal.FromCurrentContext().Raise(new Exception("Your Exception"));
+            Logger.LogError("this is log test :)");
             //var exists = await userRepository.TableNoTracking.AnyAsync(p => p.UserName == userDto.UserName);
             //if (exists)
             //    return BadRequest("user is exist.");

@@ -2,6 +2,8 @@ using AspNetCore_WebApi.Data;
 using AspNetCore_WebApi.Data.Contracts;
 using AspNetCore_WebApi.Data.Repositories;
 using AspNetCore_WebApi.WebFramework.Middleware;
+using ElmahCore.Mvc;
+using ElmahCore.Sql;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +39,11 @@ namespace AspNetCore_WebApi.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AspNetCore_WebApi.Api", Version = "v1" });
             });
+            services.AddElmah<SqlErrorLog>(options =>
+            {
+                options.Path = "elmah-errors";
+                options.ConnectionString = Configuration.GetConnectionString("Elmah");
+            });
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped<IUserRepository, UserRepository>();
         }
@@ -51,11 +58,11 @@ namespace AspNetCore_WebApi.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "AspNetCore_WebApi.Api v1"));
             }
-
+            app.UseElmah();
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseSentryTracing();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
