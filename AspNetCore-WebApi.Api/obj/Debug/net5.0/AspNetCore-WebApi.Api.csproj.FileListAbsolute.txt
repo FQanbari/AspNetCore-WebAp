@@ -113,3 +113,4 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\SharpRaven.d
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.AspNetCore.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.Extensions.Logging.dll
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.csproj.CopyComplete

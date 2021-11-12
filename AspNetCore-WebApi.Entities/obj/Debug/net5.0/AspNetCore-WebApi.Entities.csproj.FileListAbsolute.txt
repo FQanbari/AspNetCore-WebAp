@@ -15,7 +15,6 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetC
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.AssemblyInfoInputs.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.AssemblyInfo.cs
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.csproj.CoreCompileInputs.cache
-E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.csproj.CopyComplete
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\ref\AspNetCore-WebApi.Entities.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Entities\obj\Debug\net5.0\AspNetCore-WebApi.Entities.pdb

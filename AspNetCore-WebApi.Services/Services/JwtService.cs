@@ -1,5 +1,7 @@
 ﻿using AspNetCore_WebApi.Common;
+using AspNetCore_WebApi.Common.Exceptions;
 using AspNetCore_WebApi.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -24,6 +26,10 @@ namespace AspNetCore_WebApi.Services.Services
         {
             var secretKey = Encoding.UTF8.GetBytes(_siteSetting.JwtSettings.SecretKey); //longer than 16 character
             var signingCredentials = new SigningCredentials(new SymmetricSecurityKey(secretKey), SecurityAlgorithms.HmacSha256Signature);
+
+            var encryptionkey = Encoding.UTF8.GetBytes(_siteSetting.JwtSettings.Encryptkey); //must be 16 character
+            var encryptingCredentials = new EncryptingCredentials(new SymmetricSecurityKey(encryptionkey), SecurityAlgorithms.Aes128KW, SecurityAlgorithms.Aes128CbcHmacSha256);
+
             var claims = _getClaims(user);
             var descriptor = new SecurityTokenDescriptor
             {
@@ -33,6 +39,7 @@ namespace AspNetCore_WebApi.Services.Services
                 NotBefore = DateTime.Now.AddHours(_siteSetting.JwtSettings.NotBeforeMinutes),
                 Expires = DateTime.Now.AddHours(_siteSetting.JwtSettings.ExpirationMinutes),
                 SigningCredentials = signingCredentials,
+                EncryptingCredentials = encryptingCredentials,
                 Subject = new ClaimsIdentity(claims)
             };
             
@@ -45,10 +52,13 @@ namespace AspNetCore_WebApi.Services.Services
         private IEnumerable<Claim> _getClaims(User user)
         {
             //JwtRegisteredClaimNames.Name;
+            var securityStampClaimType = new ClaimsIdentityOptions().SecurityStampClaimType;
+
             var list = new List<Claim>
             {
                 new Claim(ClaimTypes.Name,user.UserName),
                 new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
+                new Claim(securityStampClaimType,user.SecurityStamp.ToString())
             };
             var roles = new Role[] { new Role { Name = "Admin" } };
             foreach (var role in roles)

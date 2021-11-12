@@ -38,12 +38,20 @@ namespace AspNetCore_WebApi.Data.Repositories
 
         public Task UpdateLastLoginDateAsync(User user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            user.LastLoginDate = DateTimeOffset.Now;
+            return UpdateAsync(user, cancellationToken);
         }
 
         public Task UpdateSecuirtyStampAsync(User user, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            user.SecurityStamp = Guid.NewGuid();
+            return UpdateAsync(user,cancellationToken);
         }
+
+        //public override void Update(User entity, bool saveNow = true)
+        //{
+        //    entity.SecurityStamp = Guid.NewGuid();
+        //    base.Update(entity, saveNow);
+        //}
     }
 }

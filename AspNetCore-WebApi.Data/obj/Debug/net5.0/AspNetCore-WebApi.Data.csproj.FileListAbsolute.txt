@@ -19,4 +19,3 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Data\obj\Debug\net5.0\AspNetCore-
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Data\obj\Debug\net5.0\AspNetCore-WebApi.Data.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Data\obj\Debug\net5.0\ref\AspNetCore-WebApi.Data.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Data\obj\Debug\net5.0\AspNetCore-WebApi.Data.pdb
-E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Data\obj\Debug\net5.0\AspNetCore-WebApi.Data.csproj.CopyComplete

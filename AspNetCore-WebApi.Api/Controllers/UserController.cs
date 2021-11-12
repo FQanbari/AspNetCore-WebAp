@@ -39,6 +39,7 @@ namespace AspNetCore_WebApi.Api.Controllers
             this.jwtService = jwtService;
         }
 
+        [Authorize]
         public async Task<List<User>> Get(CancellationToken cancellationToken)
         {
             var userName = HttpContext.User.Identity.GetUserName();
@@ -53,11 +54,15 @@ namespace AspNetCore_WebApi.Api.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [AllowAnonymous]
         public async Task<ApiResult<User>> Get(int id,CancellationToken cancellationToken)
         {
             var user = await userRepository.GetByIdAsync(cancellationToken,id);
             if (user == null)
                 return NotFound();
+
+            await userRepository.UpdateSecuirtyStampAsync(user, cancellationToken);
+
             return user;
         }
 
