@@ -69,7 +69,6 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-W
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.AssemblyInfoInputs.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.AssemblyInfo.cs
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.csproj.CoreCompileInputs.cache
-E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.MvcApplicationPartsAssemblyInfo.cs
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.MvcApplicationPartsAssemblyInfo.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\staticwebassets\AspNetCore-WebApi.Api.StaticWebAssets.Manifest.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\staticwebassets\AspNetCore-WebApi.Api.StaticWebAssets.xml
@@ -113,4 +112,4 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\SharpRaven.d
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.AspNetCore.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\bin\Debug\net5.0\Sentry.Extensions.Logging.dll
-E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.csproj.CopyComplete
+E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Api\obj\Debug\net5.0\AspNetCore-WebApi.Api.MvcApplicationPartsAssemblyInfo.cs

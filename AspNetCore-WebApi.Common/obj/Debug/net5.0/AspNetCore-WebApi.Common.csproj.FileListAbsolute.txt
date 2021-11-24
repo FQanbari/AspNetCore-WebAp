@@ -7,7 +7,6 @@ E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\bin\Debug\net5.0\AspNetCor
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\bin\Debug\net5.0\AspNetCore-WebApi.Common.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\bin\Debug\net5.0\ref\AspNetCore-WebApi.Common.dll
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\bin\Debug\net5.0\AspNetCore-WebApi.Common.pdb
-E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\obj\Debug\net5.0\AspNetCore-WebApi.Common.csproj.AssemblyReference.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\obj\Debug\net5.0\AspNetCore-WebApi.Common.GeneratedMSBuildEditorConfig.editorconfig
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\obj\Debug\net5.0\AspNetCore-WebApi.Common.AssemblyInfoInputs.cache
 E:\Projects\AspNetCore-WebAp\AspNetCore-WebApi.Common\obj\Debug\net5.0\AspNetCore-WebApi.Common.AssemblyInfo.cs

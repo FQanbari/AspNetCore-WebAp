@@ -46,6 +46,7 @@ namespace AspNetCore_WebApi.Api
         {
             services.Configure<SiteSettings>(Configuration.GetSection(nameof(SiteSettings)));
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SqlServer")));
+            services.AddCustomIdentity(_siteSetting.IdentitySettings);
             services.AddControllers(options => 
             {
                 options.Filters.Add(new AuthorizeFilter());

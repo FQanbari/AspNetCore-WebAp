@@ -12,6 +12,9 @@ namespace AspNetCore_WebApi.Api.Models
         [Required]
         [StringLength(100)]
         public string UserName { get; set; }
+        [Required]
+        [StringLength(100)]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(500)]

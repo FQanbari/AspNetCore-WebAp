@@ -44,7 +44,7 @@ namespace AspNetCore_WebApi.Data.Repositories
 
         public Task UpdateSecuirtyStampAsync(User user, CancellationToken cancellationToken)
         {
-            user.SecurityStamp = Guid.NewGuid();
+            user.SecurityStamp = Guid.NewGuid().ToString();
             return UpdateAsync(user,cancellationToken);
         }
 
