@@ -1,6 +1,4 @@
-
-
-**I worked on these features in this project**
+## **I worked on these features in this project**
 
 **ASP.NET Core Identity**: Authentication by Identity and customization
 
